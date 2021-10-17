@@ -13,7 +13,7 @@ session_start();
     <title> My website </title>
 </head>
 <body>
-    <a href="logout.php">logout</a>
+    <a href="logout.php"> logout</a>
     <h1> This is the index page </h1>
 
     <br>
