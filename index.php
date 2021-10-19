@@ -11,12 +11,18 @@ session_start();
 <html>
 <head>
     <title> My website </title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script> $(document).ready(function() {
+     $(".page").hide().fadeIn(750);
+     $(".message").hide().fadeIn(1500);
+    }) </script>
 </head>
 <body>
     <a href="logout.php"> logout</a>
-    <h1> This is the index page </h1>
+
+    <h1 class="page"> This is the index page </h1>
 
     <br>
-    Hello, <?= $user_data['user_name'];?>.
+    <p class="message">Hello, <?= $user_data['user_name'];?><p>.
 <body>
 </html>
